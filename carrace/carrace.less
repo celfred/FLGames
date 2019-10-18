@@ -18,7 +18,7 @@ header.carrace {
   display: block;
   list-style-type: none;
   padding: 3px;
-  background: -moz-linear-gradient( center bottom, #254117, #C9D1B1, #C9D1B1, #C9D1B1, #C9D1B1);
+  background: linear-gradient(to top, #254117, #C9D1B1, #C9D1B1, #C9D1B1, #C9D1B1);
   border-right: 3px dotted #000; 
   width: 900px;
   height: 50px;
@@ -63,9 +63,7 @@ header.carrace {
   border: 1px solid #000;
 }
 .selected {
-	/* background: #000; */
-  /* background: -moz-linear-gradient( center bottom, #254117, #FFF, #FFF, #FFF, #FFF); */
-  background: -moz-linear-gradient( center bottom, #000, #808080, #808080, #808080, #FFF);
+  background: linear-gradient(to top, #000, #808080, #808080, #808080, #FFF);
 }
 .winner {
   transform: rotate(720deg);
@@ -79,10 +77,10 @@ header.carrace {
   -webkit-linear-gradient(-45deg, #555 25%, transparent 25%, transparent),
   -webkit-linear-gradient(45deg, transparent 75%, #555 75%),
   -webkit-linear-gradient(-45deg, transparent 75%, #555 75%);
-  background-image: -moz-linear-gradient(45deg, #555 25%, transparent 25%, transparent),
-  -moz-linear-gradient(-45deg, #555 25%, transparent 25%, transparent),
-  -moz-linear-gradient(45deg, transparent 75%, #555 75%),
-  -moz-linear-gradient(-45deg, transparent 75%, #555 75%);
+  background-image: linear-gradient(45deg, #555 25%, transparent 25%, transparent),
+  linear-gradient(-45deg, #555 25%, transparent 25%, transparent),
+  linear-gradient(45deg, transparent 75%, #555 75%),
+  linear-gradient(-45deg, transparent 75%, #555 75%);
   background-image: -ms-linear-gradient(45deg, #555 25%, transparent 25%, transparent),
   -ms-linear-gradient(-45deg, #555 25%, transparent 25%, transparent),
   -ms-linear-gradient(45deg, transparent 75%, #555 75%),
@@ -96,7 +94,7 @@ header.carrace {
   linear-gradient(45deg, transparent 75%, #555 75%),
   linear-gradient(-45deg, transparent 75%, #555 75%);
   -webkit-background-size: 10px 10px;
-  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
   background-size: 10px 10px;
 }
 #flags {

@@ -157,7 +157,7 @@ angular.module('soccer').controller('soccerGameboardCtrl',function($scope, $stat
     $scope.testGoal(team);
     // Pick a random player from team
     // TODO? Keep history and avoid repetition of same player
-    $scope.currentSelectedPlayer = Teams.drawPlayers($scope.gameTeams[team].players, 1)[0];
+    $scope.currentSelectedPlayer = Teams.passPlayers($scope.gameTeams[team].players);
 
     if (!$scope.goal) { // No goal : pass the ball from 1 to 3 times
           // Random pass : long or short (minimun 20px)

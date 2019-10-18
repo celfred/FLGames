@@ -123,6 +123,11 @@ angular.module('FLGames').factory('Teams',function($http) {
 			}
 
 			return selectedPlayers;
+		},
+
+		passPlayers: function(pupilsList) {
+      pupilsList = this.shuffle(pupilsList);
+			return pupilsList[0];
 		}
   };
 
