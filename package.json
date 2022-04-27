@@ -3,7 +3,7 @@
   "description": "a collection of games to learn English",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.2",
     "grunt-angular-gettext": "^2.4.1",
     "grunt-angular-templates": "^1.1.0",
     "grunt-browser-output": "1.0.3",
