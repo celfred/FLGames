@@ -1,5 +1,9 @@
 angular.module('home').controller('MainCtrl',function($scope, Teams, $state, $stateParams, gettextCatalog){
 
+  Teams.savedTeams = [];
+  Teams.looser = [];
+  Teams.winner = [];
+
   $scope.allGames = [
     {id:'tictactoe', name:'TicTacToe', nbTeams:2, maxTeams:0},
     {id:'soccer', name:'Soccer', nbTeams:2, maxTeams:0},

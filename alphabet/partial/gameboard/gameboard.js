@@ -1,6 +1,6 @@
 angular.module('alphabet').controller('alphabetGameboardCtrl',function($scope, $state, $filter, Teams, Data, $sce, $timeout, DialogService, gettext, gettextCatalog){
 
-	$scope.data = 'A B C D E F G H I J K L M N O P Q R S T U V W Y';
+	$scope.data = 'A B C D E F G H I J K L M N O P Q R S T U V W Y Z';
 	$scope.alphabet = $scope.data.split(" ");
   $scope.gameTeams = [];
   $scope.currentPlayers = [];
@@ -90,8 +90,8 @@ angular.module('alphabet').controller('alphabetGameboardCtrl',function($scope, $
 					Teams.looser.push($scope.gameTeams[1]);
 				} else {
 					if ($scope.gameTeams[0].score < $scope.gameTeams[1].score) {
-						Teams.looser.push($scope.gameTeams[1]);
-						Teams.winner.push($scope.gameTeams[0]);
+						Teams.winner.push($scope.gameTeams[1]);
+						Teams.looser.push($scope.gameTeams[0]);
 					} else { // A tie
 					}
 				}

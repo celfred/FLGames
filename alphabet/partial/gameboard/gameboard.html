@@ -16,7 +16,7 @@
     <h1 id="team1Name"><span class="label label-default">Team 02 : {{gameTeams[1].score}}</span></h1>
     <ul id="team1" class="team">
       <li ng-repeat="pupil in gameTeams[1].players | orderBy:'name'">
-				<button class="btn btn-xs btn-primary" ng-click="max(1)">✓</button>
+				<button class="btn btn-xs btn-primary" ng-click="max(1, pupil)">✓</button>
 				<span ng-click="pupil.active == 1 ? pupil.active=0 : pupil.active=1" ng-class="{'selected': pupil.active == 0}">{{pupil.name}}</span>
       </li>
     </ul>
